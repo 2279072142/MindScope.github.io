@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Project Page</title>
+<style>
+  body { font-family: Arial, sans-serif; line-height: 1.6; }
+  .container {
+    width: 90%;
+    max-width: 2000px;
+    margin: auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+  }
+  header {
+    background: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    font-size: 25px;
+  }
+  .button {
+    display: inline-block;
+    margin: 10px;
+    padding: 15px 25px;
+    background-color: #555;
+    color: white;
+    text-align: center;
+    font-size: 22px;
+    border: none;
+    border-radius: 50px;
+    transition: background-color 0.3s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  .button:hover {
+    background-color: #303030;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+  }
+  .button img {
+    vertical-align: middle;
+    height: 24px;
+    margin-right: 10px;
+  }
+  .abstract {
+    background-color: #f7f7f7;
+    margin: 20px auto;
+    padding: 20px;
+    border-left: 5px solid #333;
+    text-align: left;
+    max-width: 1000px;
+  }
+  .abstract h2 {
+    margin-bottom: 10px;
+    font-size: 40px;
+    color: #333;
+  }
+  .abstract p {
+    color: #666;
+    font-size: 20px;
+    text-align: justify;
+    line-height: 1.8;
+  }
+  /* .project-image img {
+    margin-top: 100px;
+    width: 100%;
+    height: auto;
+    margin-bottom:0px;
+  } */
+  @media (max-width: 768px) {
+    .abstract, .button {
+      padding: 10px;
+    }
+    .abstract h2 {
+      font-size: 30px;
+    }
+    .abstract p, .button {
+      font-size: 16px;
+    }
+  }
+
+  .content-section { 
+    margin-bottom: 10px; 
+    text-align: center;
+    font-size: 15px;
+  }
+  .diagram {
+    text-align: center; /* Center diagram image */
+    margin-bottom: 20px; /* Space between the diagram and the text */
+  }
+  .diagram img {
+    max-width: 80%; /* Make the image responsive */
+    height: auto;
+  }
+  .explanation {
+    font-size: 20px; /* Set the font size for the explanation text */
+    text-align: left;
+  }
+
+</style>
+</head>
+<body>
+<header>
+  <div class="container">
+    <h1>MindScope: Exploring cognitive biases in large language models through Multi-Agent Systems</h1>
+  </div>
+</header>
+
+<div class="container" style="text-align:center; padding: 20px;">
+  <!-- Styled Buttons with Images -->
+  <a href="link-to-code" class="button">
+    <img src="static/img/github.png" alt="GitHub">
+    Code
+  </a>
+  <a href="link-to-dataset" class="button">
+    <img src="static/img/dataset.png" alt="Dataset">
+    Dataset
+  </a>
+  <a href="link-to-appendix" class="button">
+    <img src="static/img/appendix.png" alt="Appendix">
+    Appendix
+  </a>
+</div>
+
+<div class="abstract container">
+  <h2>abstract</h2>
+  <p>
+    More and more people use Large Language Models (LLMs) to make decisions. However, cognitive biases play a pivotal role, potentially impacting the accuracy and reliability. One such component, cognitive bias detection, is the cornerstone of understanding cognitive bias in large language models. To address this challenge, we developed the "MindScope" dataset, designed to detect cognitive biases. This dataset uniquely combines static and dynamic components: the static part consists of 5,170 open-ended questions covering 72 types of cognitive biases, while the dynamic part employs a rule-based multi-agent communication framework to generate multi-round dialogues, flexible and easily configurable for various psychological experiments on LLMs. In addition, we propose a learnable multi-agent detection framework with multi-agent body collaboration and multi-criteria decision analysis for label-free cognitive bias detection. Compared to GPT-4, our method improves the accuracy of detecting cognitive bias by 33.78%</p>
+</div>
+<dib>
+
+
+  
+</dib>
+
+
+<div class="container">
+  <div class="content-section">
+    <h1>Overview of the Construction of the MindScope Dataset</h1>
+    <div class="diagram">
+      <!-- Image representing the project -->
+      <img src="static/img/dataset_create.jpg" alt="dataset_construction",height="900",width="1600" >
+    </div>
+    <div class="explanation">
+      <p>
+        This is where you would put the explanatory text that corresponds with the diagram above. You would give a concise overview of the KnowAgent framework, describing its various components and how they interact. Remember to break the text up into readable paragraphs and sections, ensuring it is clear and easy to follow.
+      </p>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
