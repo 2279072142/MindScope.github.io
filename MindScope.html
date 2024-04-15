@@ -24,7 +24,7 @@ body { font-family: Arial, sans-serif; line-height: 1.6; }
   }
 
   .container {
-    width: 95%;
+    width: 75%;
     max-width: 2000px;
     margin: auto;
     padding: 10px;
@@ -71,13 +71,14 @@ body { font-family: Arial, sans-serif; line-height: 1.6; }
   }
 
   .abstract h2 {
-    font-size: 24px;
+    font-size: 30px;
     color: #333;
+    text-align: center;
   }
 
   .abstract p {
     color: #666;
-    font-size: 16px;
+    font-size: 20px;
     text-align: justify;
     line-height: 1.6;
   }
@@ -87,18 +88,19 @@ body { font-family: Arial, sans-serif; line-height: 1.6; }
     height: auto;
   }
 
-  .explanation {
-    font-size: 14px;
+  .explanation p{ 
+    font-size: 20px;
     text-align: center;
     margin-top: 10px;
     font-style: italic;
   }
 
   table {
-    width: 100%;
+    width: 75%;
     border-collapse: collapse;
     border: 1px solid black;
-    margin: 20px 0;
+    margin: auto;
+    text-align: center;
   }
 
   th, td {
@@ -110,6 +112,12 @@ body { font-family: Arial, sans-serif; line-height: 1.6; }
   th {
     background-color: #007bff;
     color: white;
+    text-align: center;
+  }
+
+  .content-section h1{
+    font-size: 30x;
+    text-align: center;
   }
 
   .images-with-captions {
@@ -128,6 +136,8 @@ body { font-family: Arial, sans-serif; line-height: 1.6; }
     margin-top: 20px;
     font-style: italic;
     color: #555;
+    text-align: center;
+    font-size: 20px;
   }
   
   @media (min-width: 768px) {
@@ -153,8 +163,9 @@ body { font-family: Arial, sans-serif; line-height: 1.6; }
       font-size: 20px;
     }
 
-    .explanation {
+    .explanation p{
       font-size: 20px;
+      text-align: center;
     }
 
     table th, table td {
@@ -194,7 +205,7 @@ body { font-family: Arial, sans-serif; line-height: 1.6; }
 <div class="abstract container">
   <h2>abstract</h2>
   <p>
-    More and more people use Large Language Models (LLMs) to make decisions. However, cognitive biases play a pivotal role, potentially impacting the accuracy and reliability. One such component, cognitive bias detection, is the cornerstone of understanding cognitive bias in large language models. To address this challenge, we developed the "MindScope" dataset, designed to detect cognitive biases. This dataset uniquely combines static and dynamic components: the static part consists of 5,170 open-ended questions covering 72 types of cognitive biases, while the dynamic part employs a rule-based multi-agent communication framework to generate multi-round dialogues, flexible and easily configurable for various psychological experiments on LLMs. In addition, we propose a learnable multi-agent detection framework with multi-agent body collaboration and multi-criteria decision analysis for label-free cognitive bias detection. Compared to GPT-4, our method improves the accuracy of detecting cognitive bias by 33.78%</p>
+    More and more people use Large Language Models (LLMs) to make decisions. However, cognitive biases play a pivotal role, potentially impacting the accuracy and reliability. One such component, cognitive bias detection, is the cornerstone of understanding cognitive bias in large language models. To address this challenge, we developed the "MindScope" dataset, designed to detect cognitive biases. This dataset uniquely combines static and dynamic components: the static part consists of 5,170 open-ended questions covering 72 types of cognitive biases, while the dynamic part employs a rule-based multi-agent communication framework to generate multi-round dialogues, flexible and easily configurable for various psychological experiments on LLMs. In addition, we propose a learnable multi-agent detection framework with multi-agent body collaboration and multi-criteria decision analysis for label-free cognitive bias detection. Compared to GPT-4, our method improves the accuracy of detecting cognitive bias by 33.78%.</p>
 </div>
 <dib>
 
@@ -284,7 +295,7 @@ body { font-family: Arial, sans-serif; line-height: 1.6; }
     </div>
     <div class="explanation">
       <p>
-        Figure 3 illustrates mdule display and execution process of RuleGen.</p>
+        Figure 3 illustrates module display and execution process of RuleGen.</p>
     </div>
   </div>
 </div>
