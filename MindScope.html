@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Project Page</title>
+<style>
+body { font-family: Arial, sans-serif; line-height: 1.6; }
+  
+  .title-with-icon {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .title-with-icon img {
+    margin-bottom: 10px;
+  }
+
+  .title-with-icon h1 {
+    margin: 0;
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .container {
+    width: 95%;
+    max-width: 2000px;
+    margin: auto;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+
+  header {
+    background: #15131F;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    font-size: 16px;
+  }
+
+  .button {
+    display: inline-block;
+    margin: 10px;
+    padding: 12px 20px;
+    background-color: #555;
+    color: white;
+    text-align: center;
+    font-size: 18px;
+    border: none;
+    border-radius: 50px;
+    transition: background-color 0.3s;
+  }
+
+  .button:hover {
+    background-color: #303030;
+  }
+
+  .button img {
+    vertical-align: middle;
+    height: 24px;
+    margin-right: 10px;
+  }
+
+  .abstract {
+    background-color: #f7f7f7;
+    margin: 20px auto;
+    padding: 10px;
+    border-left: 10px solid #333;
+    text-align: center;
+  }
+
+  .abstract h2 {
+    font-size: 24px;
+    color: #333;
+  }
+
+  .abstract p {
+    color: #666;
+    font-size: 16px;
+    text-align: justify;
+    line-height: 1.6;
+  }
+
+  .diagram img {
+    width: 100%; /* 使图片响应式 */
+    height: auto;
+  }
+
+  .explanation {
+    font-size: 14px;
+    text-align: center;
+    margin-top: 10px;
+    font-style: italic;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid black;
+    margin: 20px 0;
+  }
+
+  th, td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: center;
+  }
+
+  th {
+    background-color: #007bff;
+    color: white;
+  }
+
+  .images-with-captions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .image-caption-container img {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  figcaption {
+    margin-top: 10px;
+    font-style: italic;
+    color: #555;
+  }
+  
+  @media (min-width: 768px) {
+    .title-with-icon {
+      flex-direction: row;
+      justify-content: center;
+    }
+    
+    .title-with-icon img {
+      margin-right: 10px;
+      margin-bottom: 0;
+    }
+
+    .title-with-icon h1 {
+      font-size: 40px;
+    }
+    
+    .abstract h2 {
+      font-size: 40px;
+    }
+
+    .abstract p, .button {
+      font-size: 20px;
+    }
+
+    .explanation {
+      font-size: 15px;
+    }
+
+    table th, table td {
+      padding: 8px;
+    }
+  }
+
+</style>
+</head>
+<body>
+<header>
+  <div class="title-with-icon">
+    <img src="static/img/icon.png" alt="Icon" height="150"> <!-- 调整 height 属性以适应你的设计 -->
+    <h1>MindScope: Exploring cognitive biases in large language models through Multi-Agent Systems</h1>
+  </div>
+  <!-- <div class="container">
+    <h1>MindScope: Exploring cognitive biases in large language models through Multi-Agent Systems</h1>
+  </div> -->
+</header>
+
+<div class="container" style="text-align:center; padding: 20px;">
+  <!-- Styled Buttons with Images -->
+  <a href="link-to-code" class="button">
+    <img src="static/img/github.png" alt="GitHub">
+    Code
+  </a>
+  <a href="link-to-dataset" class="button">
+    <img src="static/img/dataset.png" alt="Dataset">
+    Dataset
+  </a>
+  <a href="link-to-appendix" class="button">
+    <img src="static/img/appendix.png" alt="Appendix">
+    Appendix
+  </a>
+</div>
+
+<div class="abstract container">
+  <h2>abstract</h2>
+  <p>
+    More and more people use Large Language Models (LLMs) to make decisions. However, cognitive biases play a pivotal role, potentially impacting the accuracy and reliability. One such component, cognitive bias detection, is the cornerstone of understanding cognitive bias in large language models. To address this challenge, we developed the "MindScope" dataset, designed to detect cognitive biases. This dataset uniquely combines static and dynamic components: the static part consists of 5,170 open-ended questions covering 72 types of cognitive biases, while the dynamic part employs a rule-based multi-agent communication framework to generate multi-round dialogues, flexible and easily configurable for various psychological experiments on LLMs. In addition, we propose a learnable multi-agent detection framework with multi-agent body collaboration and multi-criteria decision analysis for label-free cognitive bias detection. Compared to GPT-4, our method improves the accuracy of detecting cognitive bias by 33.78%</p>
+</div>
+<dib>
+
+
+  
+</dib>
+
+
+<div class="container">
+  <div class="content-section">
+    <h1>The Construction of the MindScope Dataset</h1>
+    <div class="diagram">
+      <!-- Image representing the project -->
+      <img src="static/img/dataset_create.jpg" alt="dataset_construction",height="900",width="1600" >
+    </div>
+    <div class="explanation">
+      <p>
+        Figure 1 illustrates the methodologies for constructing static and dynamic datasets aimed at investigating cognitive biases in decision-making.  Static dataset construction harnesses Wikipedia and pertinent literature to select 72 cognitive biases.  These biases are then translated into scenarios with GPT-4 assistance, subsequently validated by psychologists for accuracy.  The dynamic dataset targets more intricate biases, employing multi-role interactive simulations.  This approach utilizes GPT-4, supplemented by expert oversight, to ensure that the scenarios conform to the rigorous standards required for experimental investigation.  Both datasets are meticulously designed to facilitate a comprehensive analysis of cognitive biases, particularly for evaluating LLMs.
+      </p>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="content-section">
+    <h1>Static dataset case statistics</h1>
+    <div class="diagram">
+      <!-- Image representing the project -->
+      <img src="static/img/dataset count.png" alt="dataset_count",height="900",width="1600" >
+    </div>
+    <div class="explanation">
+      <p>
+        Figure 2 illustrates the number of scenario cases associated with each cognitive bias present in the static dataset.</p>
+    </div>
+  </div>
+</div>
+
+
+<div class="content-section">
+  <h1>Dataset Comparison</h1>
+</div>
+<table>
+  <tr>
+    <th>Cognitive bias datasets</th>
+    <th>Types</th>
+    <th>Static</th>
+    <th>Dynamic</th>
+    <th>Size</th>
+  </tr>
+  <tr>
+    <td><a href="https://arxiv.org/abs/2308.00225" target="_blank">[Itzhak rt al., 2023]</a></td>
+    <td>4</td>
+    <td class="crossmark">✖</td>
+    <td class="crossmark">✖</td>
+    <td>8125</td>
+  </tr>
+  <tr>
+    <td><a href="https://arxiv.org/abs/2309.17012" target="_blank"> [Koo et al., 2023]</a></td>
+    <td>6</td>
+    <td class="checkmark">✔</td>
+    <td class="crossmark">✖</td>
+    <td>50</td>
+  </tr>
+  <tr>
+    <td>[Atreides and Kelley, 2023]</td>
+    <td>24</td>
+    <td class="checkmark">✔</td>
+    <td class="crossmark">✖</td>
+    <td>150</td>
+  </tr>
+  <tr class="highlight">
+    <td>MindScope(Ours)</td>
+    <td>72</td>
+    <td class="checkmark">✔</td>
+    <td class="checkmark">✔</td>
+    <td>5170</td>
+  </tr>
+</table>
+
+
+<div class="container">
+  <div class="content-section">
+    <h1>RuleGen</h1>
+    <div class="diagram">
+      <!-- Image representing the project -->
+      <img src="static/img/RuleGen.jpg" alt="RuleGen",height="900",width="1600" >
+    </div>
+    <div class="explanation">
+      <p>
+        Figure 3 illustrates mdule display and execution process of RuleGen.</p>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="content-section">
+    <h1>LLDC</h1>
+    <div class="diagram">
+      <!-- Image representing the project -->
+      <img src="static/img/detect_method.jpg" alt="RuleGen",height="900",width="1600" >
+    </div>
+    <div class="explanation">
+      <p>
+        Figure 4 illustrates overview of learnable multi-agent detection method based on loser tree and MCDA.</p>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="content-section">
+    <h1>Main Results</h1>
+    <div class="diagram">
+      <!-- Image representing the project -->
+      <img src="static/img/模型认知偏差频率图.png" alt="RuleGen",height="900",width="1600" >
+    </div>
+    <div class="explanation">
+      <p>
+        Figure 5 illustrates test results of LLMs under static Datasets</p>
+    </div>
+
+    <div class="diagram">
+      <!-- Image representing the project -->
+      <img src="static/img/heatmap_group1.png" alt="RuleGen",height="900",width="1600" >
+    </div>
+    <div class="explanation">
+      <p>
+        Figure 6 illustrates frequency of Various Cognitive Biases Exhibited by Large Models within Static Datasets(Part-1)</p>
+    </div>
+
+    <div class="diagram">
+      <!-- Image representing the project -->
+      <img src="static/img/heatmap_group2.png" alt="RuleGen",height="900",width="1600" >
+    </div>
+    <div class="explanation">
+      <p>
+        Figure 7 illustrates frequency of Various Cognitive Biases Exhibited by Large Models within Static Datasets(Part-2)</p>
+    </div>
+    </div>
+
+    <div class="diagram">
+      <!-- Image representing the project -->
+      <img src="static/img/动态结果图.png" alt="RuleGen",height="900",width="1600" >
+    </div>
+    <div class="explanation">
+      <p>
+        Figure 8 illustrates test results of LLMs under Dynamic Datasets</p>
+    </div>
+
+
+
+  </div>
+</div>
+
+<div class="images-with-captions">
+  <!-- 第一张图片及其说明 -->
+  <div class="image-caption-container">
+    <img src="static/img/evaluatio_methods.png" alt="evaluation method">
+    <figcaption>Table 2: Performance evaluation of different methods</figcaption>
+  </div>
+
+  <!-- 第二张图片及其说明 -->
+  <div class="image-caption-container">
+    <img src="static/img/Ablation studies.png" alt="ablation study">
+    <figcaption>Table 3: Ablation studies. Comparison of module performance</figcaption>
+  </div>
+</div>
+
+
+
+</body>
+</html>
